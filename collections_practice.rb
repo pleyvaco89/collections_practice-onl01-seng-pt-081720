@@ -38,8 +38,8 @@ def greater_and_less_than_10 (array)
     "less_than_10" => []
   }
   array.each do |number|
-    if number > 10 
-      hash["greater_than_10"] << number 
+    if number > 10
+      hash["greater_than_10"] << number
     else
       hash["less_than_10"] << number
     end
@@ -51,7 +51,7 @@ end
 
 def find_winners (hash)
   winners = []
-  hash.each do |name, status| 
+  hash.each do |name, status|
     winners << name if status == "winner"
   end
   winners
@@ -77,9 +77,9 @@ end
 
 def add_s (array)
   array.collect.with_index do |word, index|
-    if index == 1 
-      word 
-    else 
+    if index == 1
+      word
+    else
       word + "s"
     end
   end
